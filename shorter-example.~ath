@@ -1,0 +1,9 @@
+#lang reader "athreader.rkt"
+
+import procedure print;
+
+x = 10;
+
+x += 2;
+
+print(x,5);
