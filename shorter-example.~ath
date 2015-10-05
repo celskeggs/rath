@@ -1,4 +1,4 @@
-#lang reader "athreader.rkt"
+#lang rath
 
 import procedure print;
 

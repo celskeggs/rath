@@ -1,4 +1,4 @@
-#lang reader "athreader.rkt"
+#lang rath
 
 import stream stdin;
 import stream stdout;
@@ -14,7 +14,7 @@ import turingtapehead head;
 head.insert(tape);
  
 import bit running;
- 
+
 running.bind(TRUE);
  
 ~ATH(running) {

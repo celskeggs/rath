@@ -1,5 +1,5 @@
 #lang racket
-(require "parse.rkt")
+(require rath/lang/parser)
 (require ragg/support)
 (require parser-tools/lex)
 (require (except-in syntax/parse boolean))

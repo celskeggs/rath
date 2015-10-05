@@ -1,5 +1,5 @@
 #lang racket
-(require "athlibs.rkt")
+(require rath/lang/libs)
 (require racket/stxparam)
 (require racket/fixnum)
 

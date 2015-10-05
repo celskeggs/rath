@@ -1,0 +1,14 @@
+cd `dirname $0`
+racket example.~ath >example-result.txt 2>example-error.txt
+grep -v 'running body' example-error.txt | cat example-result.txt - >example-all.txt
+if cmp example-all.txt - <<EOF
+Hello World!
+Program terminated.
+  context...:
+EOF
+then
+	echo "Success!"
+else
+	echo "Failure."
+	exit 1
+fi
